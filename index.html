@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <h5 class="d-inline pl-2 text-white">Portfolio</h5>
+        </div>
+        <div class="col-6 pt-2">
+          <div
+            class="row text-center p-0 d-flex justify-content-end align-items-center"
+          >
+            <div class="col-3">
+              <a href="#about" class="text-white navigation-link">About</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="text-white navigation-link"
+                >Projects</a
+              >
+            </div>
+            <div class="col-3">
+              <a href="#social-media" class="text-white navigation-link"
+                >Social Media</a
+              >
+            </div>
+            <div class="col-3">
+              <a
+                href="https://paladiram.github.io/profile.html"
+                target="_blank"
+                class="text-white navigation-link"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container container">
+      <div class="row main_row">
+        <div class="col-6">
+          <h2 class="text-white">Hello, I'm</h2>
+          <h1 class="text-warning m-heading">Ramith</h1>
+          <h2 class="text-white">Frontend Web Developer|Ml enthusiast|Competitive Programmer</h2>
+        </div>
+        <div class="col-6">
+          <img
+            src="ram1.jpeg"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+      <div class="row">
+        <div class="col-6">
+          <img src="personal.jpg" class="img-fluid" />
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+          <h3 class="text-warning">About Me</h3>
+          <p>I am PreFinal year Undergraduate at VIT Vellore in field of ComputerScience.I am front end web developer and a 
+            tech enthusiast. The reason why I chose Computer Science as my field of education for my Undergraduate Studies 
+            is because my passion towards programming and be part of updating world where technology is being as an apt substitue 
+            for all the requirements of person.Being in this field for past 3 years I have really learnt how technology can be 
+            applied in real life. This was driving force for enhancing my knowledge among the emergent domains like Artifical Intelligence
+            ,Game Programming,Machine Learning.My approach of learning these subjects were different,instead of learning as subject.
+            I adopted a methodology of building projects,stage by stage understanding and implementing the real application behind 
+            each concept lying in the subject. This process made me to evolve from b eginner to an intermediate level of comprehending 
+            the concepts present in this subject. My technical skills include expertise in programming languages Python,C++ and Java. 
+            I am also an active competitive programmer solving conceptual problems and learning Data Structures simultaneously. 
+            Practising these problems make me identify and rectify the mistake which I had committed.</p>
+            <p>Describing about my <b class="text-warning">Technical Work</b> being part of the clubs right from my first year
+              of college I had experienced on sharing the technical platform with my seniors,club leads where I learnt the art of
+              representing,guiding and sharing the knowledge with my community. The community here refers to my club members from
+              where I had learnt technical stuff like Django,ReactJs frameworks by designing nd maintaining the front end of clubs
+              website.Being a board member of the club we conducted hackathons,hosted webinars and I was also part of weekend lab 
+              sessions where I worked as mentor teaching the concepts of front end basics like HTML,CSS and also Javascript.
+              I was named as Technical head of club in my Prefinal year where I had the responsibilty of conducting techincal
+              events of club.I also had my Industrial Internship at <b class="text-warning">Indian Servers- A software development company</b> where I worked
+              as Technical Intern and was given the work of developing Stock Price Predictor. This was designed using LSTM and RNN
+              during my duration of 2 months. For further insights of my technical works kindly refer to my blog.
+          </p>
+          <button class="btn btn-outline-warning"><a href="https://paladiram.blogspot.com/" class="btn">Learn More </a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="proj1.png"
+              class="card-img-top"
+              style="height: 13rem;"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Music Generation Using RNN</h5>
+              <p class="card-text">
+               This project entails to take some existing music data and using this to train a model. The model learns the patterns in music that we humans enjoy Once the model learns this
+              ,it is able to generate new music which is simply not just copy- paste from the training data.Since the music pattern is sequence of characters obvious choice would be RNN
+              based architecture model.
+              </p>
+              <a href="https://github.com/PaladiRam/Music-Generation-Using-Deep-Learning" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="proj2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">COVID-Whatsapp Bot</h5>
+              <p class="card-text">
+                Using Flask and twilio I had developed a whatsapp bot which could post the current statistics of active cases ,deaths recorded and also the count
+                of the recovered people in a country.actual chatbot logic, I used a simple, yet surprisingly effective approach. The approach is to search in the incoming messages for the keywords A,B,C so on… and handle the query based on the request of the User.
+              </p>
+              <a href="https://github.com/PaladiRam/COVID-Whatsapp-Bot" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="proj3.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Face Mask Detection</h5>
+              <p class="card-text">
+                This project was developed using OpenCv,Keras and Deep Learning to develop a model to detect face mask in static images.
+                The dataset was divided into two sets one being with mask and other without mask.Here given a static image the model was able
+                to predict with 93% accuracy for with mask and without mask with 88%.This project is now being extended to detection of face mask
+                in real time video streams.
+              </p>
+              <a href="https://github.com/PaladiRam/Face-Mask-Detection" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="proj4.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Face Recognition based Attendance Management System</h5>
+              <p class="card-text">
+                The project has been developed using OpenCv and GUI was designed using tkinter.The application was bulit to act as substitue to biometric systems 
+                during the covid Time.For elaborated explaination on working of the project please refer to my github repositry.
+              </p>
+              <a href="https://github.com/PaladiRam/Face-Recognition-based-Attendance-Management-System" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="proj5.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stock Prediction Using LSTM and RNN</h5>
+              <p class="card-text">
+                 I attempt to construct a RNN (the LSTM in particular) for predicting stock market returns. The prediction is made on S&P500 index, 
+                 which is one of the most widely used indices for trading and benchmarking stock market returns.The project goes through following steps: Data 
+                 pre-processing and feature scaling, Building RNN, LSTM training and demonstration of results.
+              </p>
+              <a href="https://github.com/PaladiRam/Stock-Prediction-Using-RNN-and-LSTM" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="darxo.jpg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Darxo</h5>
+              <p class="card-text">
+                A simple platformer arcade game developed using Unity and Android Studio.Presented by team Theomegawolf.
+                Do try it out and check for the instruction manual in the Github repositry.The game is available in playstore
+                https://play.google.com/store/apps/details?id=com.
+              </p>
+              <a href="https://github.com/PaladiRam/Darxo" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div id="social-media" class="container-fluid">
+      <div class="container text-white py-5">
+        <h4 class="text-warning">Social Media</h4>
+        <h1 class="m-heading">Connect With Me</h1>
+        <div class="row pt-5">
+          <div class="col-3 media_link btn" href="#">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white"><a href="https://www.linkedin.com/in/paladi-ramith-318b02164" class="text-white">LinkedIn</a></h3>
+                
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white"><a href="https://github.com/Ramith-25" class="text-white">Github</a></h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-github fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white"><a href="https://www.youtube.com/channel/UChWmZve-o_2tK7M9_i-Em2w" class="text-white">Youtube</a></h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-youtube fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white"><a href="https://www.facebook.com/ramith.pnsy" class="text-white">Facebook</a></h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fa fa-facebook-square fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          
+          <a class="text-warning text-decoration-none" href="#about"
+            >Ramith</a
+          >
+        </h5>
+      </div>
+    </footer>
+  </body>
+</html>
